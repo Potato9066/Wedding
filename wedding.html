@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        M & M - Wedding
+    </title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="wedding.css"/>
+    <script src="wedding.js"></script>
+</head>
+<body>
+    <div id="background" class="Home">
+
+    </div>
+    <div class="image">
+
+    </div>
+    <div class="Box">
+    <div class="Body">
+        <header id="sticky">
+            <div id="Title">
+                <h2>Mateo Arredondo & Megan Wolfe</h2>
+            </div>
+            <div class="NavBar">
+                <div id="home" onclick="Home()">
+                    <p>
+                        Home
+                    </p>
+                </div>
+                <div id="venue" onclick="Venue()">
+                    <p>
+                        Venue
+                    </p>
+                </div>
+                <div id="registry" onclick="Registry()">
+                    <p>
+                        Registry
+                    </p>
+                </div>
+                <div id="library" onclick="Library()">
+                    <p>
+                        Library
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div id="Main">
+            
+        </div>
+        <footer>
+            <div id="Form">
+                <form onsubmit="rsvp()" autocomplete="off">
+                    <fieldset>
+                        <legend>RSVP</legend>
+                        <label for="Name">Please enter your full name.</label><br>
+                        <input type="text" id="Name" name="Name" placeholder="Name Here" required><br>
+                        <label for="Attending">Are you planning on attending?</label><br>
+                        <select id="Attendance" name="Attending">
+                            <option value="NotAttending">Not Attending</option>
+                            <option value="Attending">Attending</option>
+                        </select><br>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </fieldset>
+                </form>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+</html>

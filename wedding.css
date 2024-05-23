@@ -1,0 +1,107 @@
+.Box {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 15px;
+}
+
+.Body {
+    background-color: burlywood;
+}
+
+/* Background */
+#background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -30;
+}
+
+.Home {
+    background-image: url("Images/BackgroundHome.jpeg");
+    background-size: cover;
+    background-position: 0;
+}
+
+.Venue {
+    background-image: url("Images/BackgroundVen.jpeg");
+    background-size: cover;
+    background-position: 0;
+}
+
+.Registry {
+    background-image: url("Images/Background.jpeg");
+    background-size: cover;
+    background-position: 0;
+}
+
+.Library {
+    background-image: url("Images/BackgroundLib.jpeg");
+    background-size: cover;
+    background-position: 0;
+}
+
+.image {
+    height: 300px;
+}
+
+/* Navigation Menu*/
+#Title {
+    padding: 3px;
+    text-align: center;
+    color: black;
+}
+
+.NavBar {
+    background-color: aquamarine;
+    width: 100%;
+}
+
+#sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#home, #venue, #registry, #library {
+    display: inline-block;
+    background: aquamarine;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#home:hover, #venue:hover, #registry:hover, #library:hover {
+    background: #d6d6d6;
+    cursor: pointer;
+}
+
+/* Main Class*/
+#Main {
+    color: black;
+}
+
+/* Form Class */
+#Form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: black;
+    height: 500px;
+}
+
+#Form label {
+    padding: 5px;
+}
+
+#Form input {
+    margin: 5px;
+}
+
+#Form select {
+    margin: 5px;
+}
