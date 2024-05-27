@@ -6,8 +6,7 @@ function rsvp() {
 // NavBar
 function Home() {
     document.getElementById("Main").innerHTML = 
-    `<p id='thing'>if i type here does it work</p> 
-    <button onclick='testthing()'>test Button</button>`
+    `<p id='thing'>if i type here does it work</p>`
     document.getElementById("background").className = "Home"
     window.scrollTo(0,0);
 }
