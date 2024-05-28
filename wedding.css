@@ -7,7 +7,7 @@
 }
 
 .Body {
-    background-color: burlywood;
+    background-color: #f7f7f7;
 }
 
 /* Background */
@@ -55,7 +55,7 @@
 }
 
 .NavBar {
-    background-color: aquamarine;
+    background-color: burlywood;
     width: 100%;
 }
 
@@ -67,7 +67,7 @@
 
 #home, #venue, #registry, #library {
     display: inline-block;
-    background: aquamarine;
+    background: burlywood;
     width: 100px;
     height: 50px;
     font-size: 15px;
@@ -75,13 +75,17 @@
 }
 
 #home:hover, #venue:hover, #registry:hover, #library:hover {
-    background: #d6d6d6;
+    background: #819e7d;
     cursor: pointer;
 }
 
 /* Main Class*/
 #Main {
     color: black;
+}
+
+h3 {
+    margin-left: 20px;
 }
 
 /* Form Class */
