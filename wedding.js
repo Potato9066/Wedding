@@ -31,7 +31,16 @@ function Library() {
 // Main Page Change
 function setHome() {
     document.getElementById("Main").innerHTML = 
-    `<h3>Get to Know us</h3>`
+    `<div id="Main">
+        <div id="griddiv">
+            <img id="image" src="Images/HomePicture.jpg" id="column1">
+            <div id="column2">
+                <h2 id="center">Mateo and Megan's Wedding</h2>
+                <h4 id="center">June 29, 2025</h4>
+                <p id="center">6597 138th Ave, Holland, MI</p>
+            </div>
+        </div>
+    </div>`
 }
 
 function setVenue() {
