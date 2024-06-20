@@ -19,7 +19,7 @@
 }
 
 .Home {
-    background-image: url("Images/BackgroundHome.jpg");
+    background-image: url("Images/BackgroundHome.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -31,7 +31,7 @@
 }
 
 .Registry {
-    background-image: url("Images/Background.jpeg");
+    background-image: url("Images/BeckgroundReg.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -42,9 +42,14 @@
     background-position: center;
 }
 
+/* look im typing a note */
 .image {
     height: 90vh;
-    animation: jump 2s 1.5s 1;
+}
+
+.scrolled {
+    height: 90vh;
+    animation: jump 1.5s 2s 1;
 }
 
 @keyframes jump {
@@ -59,7 +64,7 @@
     }
 }
 
-/* Navigation Menu*/
+/* Navigation Menu */
 #Title {
     padding: 3px;
     text-align: center;
@@ -78,27 +83,27 @@
     width: 100%;
 }
 
-#home, #venue, #registry, #library {
+#navselect {
     display: inline-block;
     background: #deb887;
-    width: 100px;
+    width: 75px;
     height: 50px;
     font-size: 15px;
     text-align: center;
 }
 
-#home:hover, #venue:hover, #registry:hover, #library:hover {
+#navselect:hover {
     background: #819e7d;
     cursor: pointer;
 }
 
-/* Main Class*/
+/* Main Class */
 #Main {
     color: black;
+    padding-bottom: 10px;
 }
 
 h3 {
-    margin-left: 20px;
     font-size: 25px;
     text-align: center;
 }
@@ -139,9 +144,16 @@ h4 {
     height: auto;
 }
 
+#section {
+    padding-top: 5px;
+    margin-left: 5%;
+    width: 90%;
+    border-bottom: #808080;
+    border-bottom-style: solid;
+}
+
 /* Form Class */
 #Form {
-    margin-top: 10px;
     margin-left: 25px;
     margin-right: 25px;
     color: black;
@@ -160,9 +172,16 @@ h4 {
     margin: 5px;
 }
 
+footer {
+    margin: 5px;
+    padding: 5px;
+    border-top: #808080;
+    border-top-style: solid;
+}
+
 /*Small screen*/
 @media screen and (max-width: 700px) {
-    .Home {
+    .Home, .Venue, .Registry,  .Library{
         background-image: none;
         background-color: #f7f7f7;
     }
