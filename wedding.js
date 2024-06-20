@@ -3,11 +3,14 @@ function rsvp() {
     var name = document.getElementById("myForm").elements[0].value;
     var attending = document.getElementById("myForm").elements[1].value;
     try {
-
-    }
-    finally{
         alert(`${name} is planning on ${attending}`)
     }
+    catch {
+        alert("it didnt work")
+    }
+    // finally{
+    //     alert(`${name} is planning on ${attending}`)
+    // }
 }
 
 // NavBar
