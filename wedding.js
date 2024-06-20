@@ -1,6 +1,13 @@
 // RSVP
 function rsvp() {
-    alert("Thank you for submitting your RSVP")
+    var name = document.getElementById("myForm").elements[0].value;
+    var attending = document.getElementById("myForm").elements[1].value;
+    try {
+
+    }
+    finally{
+        alert(`${name} is planning on ${attending}`)
+    }
 }
 
 // NavBar
