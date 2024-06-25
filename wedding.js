@@ -12,32 +12,50 @@ window.addEventListener("DOMContentLoaded", (event) => {
             .catch(error => console.error('Error!', error.message))
         })
     }
-    else {
-        alert("that didnt work")
-    }
 });
-
-// function rsvp() {
-//     alert("Thank you for your RSVP! \nIf you wish to change your RSVP please reach out to us directly.")
-// }
 
 // NavBar
 function Home() {
-    window.location.href = "home.html"
+    if (window.location.href.indexOf("wedding") > -1 || window.location.href.indexOf("home") > -1) {
+        return
+    }
+    else {
+        window.location.href = "home.html"
+    }
 }
 
 function Venue() {
-    window.location.href = "venue.html"
+    if (window.location.href.indexOf("venue") > -1){
+
+    }
+    else {
+        window.location.href = "venue.html"
+    }
 }
 
 function Registry() {
-    window.location.href = "registry.html"
+    if (window.location.href.indexOf("registry") > -1){
+
+    }
+    else {
+        window.location.href = "registry.html"
+    }
 }
 
 function Library() {
-    window.location.href = "library.html"
+    if (window.location.href.indexOf("library") > -1){
+
+    }
+    else {
+        window.location.href = "library.html"
+    }
 }
 
 function Info() {
-    window.location.href = "info.html"
+    if (window.location.href.indexOf("info") > -1) {
+
+    }
+    else {
+        window.location.href = "info.html"
+    }
 }
