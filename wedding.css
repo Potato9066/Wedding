@@ -42,7 +42,12 @@
     background-position: center;
 }
 
-/* look im typing a note */
+.Info {
+    background-image: url("Images/BackgroundInfo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .image {
     height: 90vh;
 }
@@ -181,7 +186,7 @@ footer {
 
 /*Small screen*/
 @media screen and (max-width: 700px) {
-    .Home, .Venue, .Registry,  .Library{
+    .Home, .Venue, .Registry,  .Library, .Info{
         background-image: none;
         background-color: #f7f7f7;
     }

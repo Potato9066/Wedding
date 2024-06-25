@@ -59,8 +59,8 @@
         </div>
         <footer>
             <div id="Form">
-                <form onsubmit="rsvp()" autocomplete="off">
-                    <fieldset>
+                <form action="" autocomplete="off" method="post" name="RSVPform">
+                    <Fieldset id="myForm" name="RSVPform">
                         <legend>RSVP</legend>
                         <label for="Name">Please enter your full name.</label><br>
                         <input type="text" id="Name" name="Name" placeholder="Name Here" required><br>
@@ -69,9 +69,9 @@
                             <option value="NotAttending">Not Attending</option>
                             <option value="Attending">Attending</option>
                         </select><br>
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" id="submit">
                         <input type="reset" value="Reset">
-                    </fieldset>
+                    </Fieldset>
                 </form>
             </div>
         </footer>
