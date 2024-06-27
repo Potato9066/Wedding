@@ -133,6 +133,7 @@ h4 {
     width: 100%;
 }
 
+/* Grid */
 #griddiv {
     display: grid;
     grid-template-columns: 35% 65%;
@@ -159,6 +160,21 @@ h4 {
     width: 90%;
     border-bottom: #808080;
     border-bottom-style: solid;
+}
+
+/* Info page */
+#FAQs {
+    padding: 5px;
+}
+
+#question {
+    list-style-type: none;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+#answer {
+    font-weight: normal;
 }
 
 /* Form Class */
