@@ -9,6 +9,10 @@
     background-color: #f7f7f7;
 }
 
+h1 {
+    font-family: 'Zapfino', cursive;
+    font-weight: 900;
+}
 /* Background */
 #background {
     width: 100%;
@@ -31,7 +35,7 @@
 }
 
 .Registry {
-    background-image: url("Images/BeckgroundReg.jpeg");
+    background-image: url("Images/BeckgroundReg.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -49,23 +53,23 @@
 }
 
 .image {
-    height: 90vh;
+    height: 85vh;
 }
 
 .scrolled {
-    height: 90vh;
+    height: 85vh;
     animation: jump 1.5s 2s 1;
 }
 
 @keyframes jump {
     0% {
-        height: 90vh;
-    }
-    50% {
         height: 85vh;
     }
+    50% {
+        height: 80vh;
+    }
     100% {
-        height: 90vh;
+        height: 85vh;
     }
 }
 
@@ -110,13 +114,19 @@
 
 h3 {
     font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
 
 h4 {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 23px;
     margin-top: 0;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #center {
@@ -222,5 +232,9 @@ footer {
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    h1 {
+        font-family: cursive;
     }
 }
