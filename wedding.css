@@ -9,6 +9,10 @@
     background-color: #f7f7f7;
 }
 
+h1 {
+    font-family: 'Zapfino', cursive;
+    font-weight: 900;
+}
 /* Background */
 #background {
     width: 100%;
@@ -21,32 +25,55 @@
 .Home {
     background-image: url("Images/BackgroundHome.jpeg");
     background-size: cover;
-    background-position: 0;
+    background-position: center;
 }
 
 .Venue {
-    background-image: url("Images/BackgroundVen.jpeg");
+    background-image: url("Images/BackgroundVenu.jpeg");
     background-size: cover;
-    background-position: 0;
+    background-position: center;
 }
 
 .Registry {
-    background-image: url("Images/Background.jpeg");
+    background-image: url("Images/BeckgroundReg.jpg");
     background-size: cover;
-    background-position: 0;
+    background-position: center;
 }
 
 .Library {
     background-image: url("Images/BackgroundLib.jpeg");
     background-size: cover;
-    background-position: 0;
+    background-position: center;
+}
+
+.Info {
+    background-image: url("Images/BackgroundInfo.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .image {
-    height: 300px;
+    height: 85vh;
 }
 
-/* Navigation Menu*/
+.scrolled {
+    height: 85vh;
+    animation: jump 1.5s 2s 1;
+}
+
+@keyframes jump {
+    0% {
+        height: 85vh;
+    }
+    50% {
+        height: 80vh;
+    }
+    100% {
+        height: 85vh;
+    }
+}
+
+/* Navigation Menu */
 #Title {
     padding: 3px;
     text-align: center;
@@ -55,7 +82,7 @@
 }
 
 .NavBar {
-    background-color: burlywood;
+    background-color: #deb887;
     width: 100%;
 }
 
@@ -65,33 +92,58 @@
     width: 100%;
 }
 
-#home, #venue, #registry, #library {
+#navselect {
     display: inline-block;
-    background: burlywood;
-    width: 100px;
+    background: #deb887;
+    width: 75px;
     height: 50px;
     font-size: 15px;
     text-align: center;
 }
 
-#home:hover, #venue:hover, #registry:hover, #library:hover {
+#navselect:hover {
     background: #819e7d;
     cursor: pointer;
 }
 
-/* Main Class*/
+/* Main Class */
 #Main {
     color: black;
+    padding-bottom: 10px;
 }
 
 h3 {
-    margin-left: 20px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 23px;
+    margin-top: 0;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#center {
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#paragraph {
+    padding: 5px;
 }
 
 #image {
     width: 100%;
 }
 
+/* Grid */
 #griddiv {
     display: grid;
     grid-template-columns: 35% 65%;
@@ -107,11 +159,36 @@ h3 {
 
 #column2 {
     grid-column: 2;
+    font-size: 20px;
+    margin-top: 12%;
+    height: auto;
+}
+
+#section {
+    padding-top: 5px;
+    margin-left: 5%;
+    width: 90%;
+    border-bottom: #808080;
+    border-bottom-style: solid;
+}
+
+/* Info page */
+#FAQs {
+    padding: 5px;
+}
+
+#question {
+    list-style-type: none;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+#answer {
+    font-weight: normal;
 }
 
 /* Form Class */
 #Form {
-    margin-top: 10px;
     margin-left: 25px;
     margin-right: 25px;
     color: black;
@@ -128,4 +205,36 @@ h3 {
 
 #Form select {
     margin: 5px;
+}
+
+footer {
+    margin: 5px;
+    padding: 5px;
+    border-top: #808080;
+    border-top-style: solid;
+}
+
+/*Small screen*/
+@media screen and (max-width: 700px) {
+    .Home, .Venue, .Registry,  .Library, .Info{
+        background-image: none;
+        background-color: #f7f7f7;
+    }
+
+    .image {
+        height: 0%;
+        visibility: hidden;
+        animation: none;
+    }
+
+    .Box {
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-family: cursive;
+    }
 }
