@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 // NavBar
 function Home() {
-    if (window.location.href.indexOf("wedding") > -1 || window.location.href.indexOf("home") > -1) {
+    if (window.location.href.indexOf("index") > -1 || window.location.href.indexOf("home") > -1) {
         return
     }
     else {
