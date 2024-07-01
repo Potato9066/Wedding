@@ -60,7 +60,7 @@
         </div>
         <footer>
             <div id="Form">
-                <form action="" autocomplete="off" method="post" name="RSVPform">
+                <form id="myForm" action="" autocomplete="off" method="post" name="RSVPform">
                     <Fieldset id="myForm" name="RSVPform">
                         <legend>RSVP</legend>
                         <label for="Name">Please enter your full name.</label><br>
@@ -70,6 +70,13 @@
                             <option value="NotAttending">Not Attending</option>
                             <option value="Attending">Attending</option>
                         </select><br>
+                        <input type="submit" value="Submit">
+                        <input type="button" 
+                            class="g-recaptcha" 
+                            data-sitekey="6LdynAUqAAAAAExRB2ibzYJ25krrEjZSYq1hb0sn" 
+                            data-callback='onSubmit' 
+                            data-action='submit'
+                            value="New Submit">
                         <input type="reset" value="Reset">
                     </Fieldset>
                 </form>
