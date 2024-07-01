@@ -7,6 +7,7 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="wedding.css"/>
     <script src="wedding.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
     <div id="background" class="Home">
@@ -69,10 +70,13 @@
                             <option value="NotAttending">Not Attending</option>
                             <option value="Attending">Attending</option>
                         </select><br>
-                        <input type="submit" value="Submit" id="submit">
                         <input type="reset" value="Reset">
                     </Fieldset>
                 </form>
+                <button class="g-recaptcha" 
+                    data-sitekey="6LdynAUqAAAAAExRB2ibzYJ25krrEjZSYq1hb0sn" 
+                    data-callback='onSubmit' 
+                    data-action='submit'>Submit</button>
             </div>
         </footer>
     </div>

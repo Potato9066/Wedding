@@ -1,6 +1,10 @@
 // RSVP
 const ScriptUrl = "https://script.google.com/macros/s/AKfycby4ocdfVycyBUKc-Ud3uJ5CldKRcqjHbxgeDTw51Gd0-sOfXX8iqFDBp4MQUCRHFm1x/exec"
 
+function onSubmit(token) {
+    document.getElementById("myForm").submit();
+}
+
 window.addEventListener("DOMContentLoaded", (event) => {
     const form = document.forms['RSVPform']
     if (form) {
