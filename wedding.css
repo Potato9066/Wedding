@@ -215,13 +215,13 @@ footer {
 }
 
 /*Small screen*/
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 985px) {
     .Home, .Venue, .Registry,  .Library, .Info{
         background-image: none;
         background-color: #f7f7f7;
     }
 
-    .image {
+    .image, .scrolled {
         height: 0%;
         visibility: hidden;
         animation: none;
