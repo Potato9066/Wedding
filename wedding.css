@@ -10,7 +10,7 @@
 }
 
 h1 {
-    font-family: 'Zapfino', cursive;
+    font-family: 'Great Vibes', 'Zapfino', 'Brush Script MT', cursive;
     font-weight: 900;
 }
 /* Background */
@@ -129,7 +129,7 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
-#center {
+#center, #Countdown {
     margin-bottom: 5px;
     text-align: center;
     margin-top: 0;

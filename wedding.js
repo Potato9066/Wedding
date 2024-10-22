@@ -18,6 +18,31 @@ window.addEventListener("DOMContentLoaded", (event) => {
     }
 });
 
+//Countdown
+var countDownDate = new Date("Jun 29, 2025" ).getTime();
+
+function timeuntil() { 
+
+    // Get today's date and time
+    now = new Date().getTime();
+      
+    // Find the distance between now and the count down date
+    distance = countDownDate - now;
+      
+    // Time calculations for days, hours, minutes and seconds
+    days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  
+      
+    // Output the result in an element with id="demo"
+    document.getElementById("Countdown").innerHTML = days + " Days to Go!";
+      
+    // If the count down is over, write some text 
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "Time to get Married!";
+    }
+}
+
 // NavBar
 function Home() {
     if (window.location.href.indexOf("index") > -1 || window.location.href.indexOf("home") > -1) {

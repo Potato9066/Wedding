@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="wedding.css"/>
     <script src="wedding.js"></script>
 </head>
-<body>
+<body onload="timeuntil()">
     <div id="background" class="Home">
     </div>
     <div class="image">
@@ -52,12 +52,18 @@
             <img src="Images/HomePicture.jpg" id="column1">
             <div id="column2">
                 <h2 id="center">Mateo and Megan's Wedding</h2>
-                <h4 id="center">June 29, 2025</h4>
+                <h3 id="center">June 29, 2025</h3>
+                <p id="Countdown"></p>
+                <br>
+                <h4 id="center">Dorr E. Felt Mansion</h4>
                 <p id="center">6597 138th Ave, Holland, MI</p>
             </div>
         </div>
         </div>
-        <footer>
+        <footer id="center">
+            <p>Mateo Arredondo & Megan Wolfe</p>
+        </footer>
+        <!-- <footer>
             <div id="Form">
                 <form id="myForm" action="" autocomplete="off" method="post" name="RSVPform">
                     <Fieldset id="myForm" name="RSVPform">
@@ -66,14 +72,18 @@
                         <input type="text" id="Name" name="Name" placeholder="Name Here" required><br>
                         <label for="Attending">Are you planning on attending?</label><br>
                         <select id="Attendance" name="Attending">
-                            <option value="NotAttending">Not Attending</option>
-                            <option value="Attending">Attending</option>
+                            <option value="NotAttending">Unable to Attend</option>
+                            <option value="AttendingCeremony">Attending Ceremony Only</option>
+                            <option value="AttendingReception">Attending Reception Only</option>
+                            <option value="AttendingBoth">Attending All Festivities</option>
                         </select><br>
+                        <label for="Song">Please let us know a song you would like to hear.</label><br>
+                        <input type="text" id="Song" name="Song" placeholder="Type a Song"><br>
                         <input type="submit" value="Submit">
                         <input type="reset" value="Reset">
                     </Fieldset>
                 </form>
             </div>
-        </footer>
+        </footer> -->
     </div>
 </body> 
