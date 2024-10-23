@@ -19,24 +19,30 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 //Countdown
-var countDownDate = new Date("Jun 29, 2025" ).getTime();
+var countDownDate = new Date("Jun 29, 2025 16:00:00" ).getTime();
 
 function timeuntil() { 
 
-    // Get today's date and time
     now = new Date().getTime();
       
-    // Find the distance between now and the count down date
     distance = countDownDate - now;
-      
+    
     // Time calculations for days, hours, minutes and seconds
     days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  
+    hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
-    // Output the result in an element with id="demo"
-    document.getElementById("Countdown").innerHTML = days + " Days to Go!";
-      
-    // If the count down is over, write some text 
+    if (days > 100){
+        document.getElementById("Countdown").innerHTML = days + " Days to Go!";
+    }
+    else if (days > 1){
+        document.getElementById("Countdown").innerHTML = days + " Days and " + hours + " Hours to Go!";
+    }
+    else {
+        document.getElementById("Countdown").innerHTML = hours + " Hours and " + minutes + " Minutes to Go!";
+    }
+
     if (distance < 0) {
       clearInterval(x);
       document.getElementById("demo").innerHTML = "Time to get Married!";
