@@ -10,7 +10,7 @@
 }
 
 h1 {
-    font-family: 'Zapfino', cursive;
+    font-family: 'Zapfino', 'Brush Script MT', cursive;
     font-weight: 900;
 }
 /* Background */
@@ -99,6 +99,7 @@ h1 {
     height: 50px;
     font-size: 15px;
     text-align: center;
+    transition-duration: 0.4s;
 }
 
 #navselect:hover {
@@ -129,7 +130,7 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
-#center {
+#center, #Countdown {
     margin-bottom: 5px;
     text-align: center;
     margin-top: 0;
@@ -137,6 +138,27 @@ p {
 
 #paragraph {
     padding: 5px;
+}
+
+button {
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    background-color: #deb887;
+    transition-duration: 0.4s;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #819e7d;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 /* Grid */
