@@ -256,7 +256,7 @@ footer {
     }
 
     h1 {
-        font-family: cursive;
+        font-family: 'Brush Script MT', cursive;
         font-size: 40pt;
     }
 
@@ -270,6 +270,19 @@ footer {
 
     #section {
         font-size: 40px;
+    }
+
+    a {
+        font-size: 30px;
+    }
+
+    ul {
+        font-size: 34px;
+    }
+
+    #answer li{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     /* Mobile Grid */
