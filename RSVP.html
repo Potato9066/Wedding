@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        M & M - Wedding
+    </title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="wedding.css"/>
+    <script src="wedding.js"></script>
+</head>
+<body>
+    <div id="background" class="RSVP">
+    </div>
+    <div class="image">
+    </div>
+    <div class="Box">
+    <div class="Body">
+        <header id="sticky">
+            <div id="Title">
+                <h1>Mateo Arredondo & Megan Wolfe</h1>
+            </div>
+            <div class="NavBar">
+                <div id="navselect" onclick="Home()">
+                    <p>
+                        Home
+                    </p>
+                </div>
+                <div id="navselect" onclick="Venue()">
+                    <p>
+                        Venue
+                    </p>
+                </div>
+                <div id="navselect" onclick="Registry()">
+                    <p>
+                        Registry
+                    </p>
+                </div>
+                <div id="navselect" onclick="Library()">
+                    <p>
+                        Library
+                    </p>
+                </div>
+                <div id="navselect" onclick="Info()">
+                    <p>
+                        Info
+                    </p>
+                </div>
+            </div>
+        </header>
+        <div id="Main">
+            <div id="griddiv">
+                <img id="column1" src="Images/HomePicture.jpg" >
+            <div id="column2">
+                <div id="Form">
+                    <table id="RSVPtable">
+                        <tr id="TestCode">
+                            <td>
+                                <form id="EnterCode" method="post" autocomplete="off" name="EnterCode" onsubmit="return false">
+                                    <Fieldset id="EnterCode" name="EnterCode">
+                                        <legend>RSVP</legend>
+                                        <label for="passcode">Enter Your Code</label><br>
+                                        <input type="text" id="passcode" name="passcode" placeholder="Enter Code Here" required><br>
+                                        <input type="submit" value="Confirm" onclick="Passcode()">
+                                    </Fieldset>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="Family" >
+                            <td>
+                                <!-- Family -->
+                                <form id="FamilyForm" action="" autocomplete="off" method="post" name="FamilyName">
+                                    <Fieldset id="FamilyForm" name="FamilyName">
+                                        <legend>RSVP</legend>
+                                        <label for="Name">Please enter your Family name.</label><br>
+                                        <input type="text" id="Name" name="Name" placeholder="Name Here" required><br>
+                                        <label for="DatesName">Please enter the number of people in your Family.</label><br>
+                                        <input type="number" id="Extra" name="Extra" placeholder="Enter a number Here" required><br>
+                                        <label for="Attending">Are you planning on attending?</label><br>
+                                        <select id="Attendance" name="Attending">
+                                            <option value="NotAttending">Unable to Attend</option>
+                                            <option value="AttendingCeremony">Attending Ceremony Only</option>
+                                            <option value="AttendingReception">Attending Reception Only</option>
+                                            <option value="AttendingBoth">Attending All Festivities</option>
+                                        </select><br>
+                                        <label for="Song">Please let us know a song you would like to hear played.</label><br>
+                                        <input type="text" id="Song" name="Song" placeholder="Type a Song"><br>
+                                        <input type="submit" value="Submit">
+                                        <input type="reset" value="Reset">
+                                    </Fieldset>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="Couple" >
+                            <td>
+                                <!-- Couple -->
+                                <form id="CoupleForm" action="" autocomplete="off" method="post" name="CoupleName">
+                                    <Fieldset id="CoupleForm" name="CoupleName">
+                                        <legend>RSVP</legend>
+                                        <label for="Name">Please enter your full name.</label><br>
+                                        <input type="text" id="Name" name="Name" placeholder="Name Here" required><br>
+                                        <label for="DatesName">Please enter your Date's full name.</label><br>
+                                        <input type="text" id="Extra" name="Extra" placeholder="Date's Name Here" required><br>
+                                        <label for="Attending">Are you planning on attending?</label><br>
+                                        <select id="Attendance" name="Attending">
+                                            <option value="NotAttending">Unable to Attend</option>
+                                            <option value="AttendingCeremony">Attending Ceremony Only</option>
+                                            <option value="AttendingReception">Attending Reception Only</option>
+                                            <option value="AttendingBoth">Attending All Festivities</option>
+                                        </select><br>
+                                        <label for="Song">Please let us know a song you would like to hear played.</label><br>
+                                        <input type="text" id="Song" name="Song" placeholder="Type a Song"><br>
+                                        <input type="submit" value="Submit">
+                                        <input type="reset" value="Reset">
+                                    </Fieldset>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="Individual">
+                            <td>
+                                <!-- Individual -->
+                                <form id="IndividualForm" action="" autocomplete="off" method="post" name="IndividualName">
+                                    <Fieldset id="myForm" name="IndividualName">
+                                        <legend>RSVP</legend>
+                                        <label for="Name">Please enter your full name.</label><br>
+                                        <input type="text" id="Name" name="Name" placeholder="Name Here" required><br>
+                                        <input type="hidden" id="Thing" name="Extra" value="None">
+                                        <label for="Attending">Are you planning on attending?</label><br>
+                                        <select id="Attendance" name="Attending">
+                                            <option value="NotAttending">Unable to Attend</option>
+                                            <option value="AttendingCeremony">Attending Ceremony Only</option>
+                                            <option value="AttendingReception">Attending Reception Only</option>
+                                            <option value="AttendingBoth">Attending All Festivities</option>
+                                        </select><br>
+                                        <label for="Song">Please let us know a song you would like to hear played.</label><br>
+                                        <input type="text" id="Song" name="Song" placeholder="Type a Song"><br>
+                                        <input type="submit" value="Submit">
+                                        <input type="reset" value="Reset">
+                                    </Fieldset>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr id="PlusOne">
+                            <td>
+                                <form id="PlusForm" action="" autocomplete="off" method="post" name="PlusName">
+                                    <Fieldset id="PlusForm" name="PlusName">
+                                        <legend>RSVP</legend>
+                                        <label for="Name">Please enter your full name.</label><br>
+                                        <input type="text" id="Name" name="Name" placeholder="Your Name Here" required><br>
+                                        <label for="DatesName">Please enter your Plus One's full name.</label><br>
+                                        <input type="text" id="Extra" name="Extra" placeholder="Plus One's Name Here" required><br>
+                                        <label for="Attending">Are you planning on attending?</label><br>
+                                        <select id="Attendance" name="Attending">
+                                            <option value="NotAttending">Unable to Attend</option>
+                                            <option value="AttendingCeremony">Attending Ceremony Only</option>
+                                            <option value="AttendingReception">Attending Reception Only</option>
+                                            <option value="AttendingBoth">Attending All Festivities</option>
+                                        </select><br>
+                                        <label for="Song">Please let us know a song you would like to hear played.</label><br>
+                                        <input type="text" id="Song" name="Song" placeholder="Type a Song"><br>
+                                        <input type="submit" value="Submit">
+                                        <input type="reset" value="Reset">
+                                    </Fieldset>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- +1 -->
+            
+        </div>
+        <footer id="center">
+            <p>Mateo Arredondo & Megan Wolfe</p>
+        </footer>
+    </div>
+    </div>
+</body>

@@ -1,22 +1,96 @@
 // RSVP
 const ScriptUrl = "https://script.google.com/macros/s/AKfycby4ocdfVycyBUKc-Ud3uJ5CldKRcqjHbxgeDTw51Gd0-sOfXX8iqFDBp4MQUCRHFm1x/exec"
 
+var Forms = ["FamilyForm"]
+var Names = ["FamilyTest"]
+ 
 function onSubmit(token) {
-    document.getElementById("myForm").submit();
+    document.getElementById("FamilyForm").submit();
+    document.getElementById("CoupleForm").submit();
+    document.getElementById("IndividualForm").submit();
+    document.getElementById("PlusForm").submit();
 }
 
 window.addEventListener("DOMContentLoaded", (event) => {
-    const form = document.forms['RSVPform']
+    const form = document.forms['FamilyName']
     if (form) {
         form.addEventListener('submit', e => {
             e.preventDefault()
             fetch(ScriptUrl, { method: 'POST', body: new FormData(form)})
             .then(response => alert("Thank you for your RSVP! \nIf you wish to change your RSVP please reach out to us directly." ))
-            .then(() => { window.location.reload(); })
-            .catch(error => console.error('Error!', error.message))
+            .then(() => { window.location.href = "home.html"; })
+            .catch(error => console.error('Something went Wrong.\nPlease Try Again', error.message))
         })
     }
 });
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    const form = document.forms['CoupleName']
+    if (form) {
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(ScriptUrl, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you for your RSVP! \nIf you wish to change your RSVP please reach out to us directly." ))
+            .then(() => { window.location.href = "home.html"; })
+            .catch(error => console.error('Something went Wrong.\nPlease Try Again', error.message))
+        })
+    }
+});
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    const form = document.forms['IndividualName']
+    if (form) {
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(ScriptUrl, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you for your RSVP! \nIf you wish to change your RSVP please reach out to us directly." ))
+            .then(() => { window.location.href = "home.html"; })
+            .catch(error => console.error('Something went Wrong.\nPlease Try Again', error.message))
+        })
+    }
+});
+
+window.addEventListener("DOMContentLoaded", (event) => {
+    const form = document.forms['PlusName']
+    if (form) {
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(ScriptUrl, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you for your RSVP! \nIf you wish to change your RSVP please reach out to us directly." ))
+            .then(() => { window.location.href = "home.html"; })
+            .catch(error => console.error('Something went Wrong.\nPlease Try Again', error.message))
+        })
+    }
+});
+
+function Remove() {
+    document.getElementById("TestCode").style.visibility = "collapse";
+}
+
+function Passcode() {
+    var Code = document.getElementById("passcode").value;
+
+    switch(Code) {
+        case "Family":
+            document.getElementById("Family").style.visibility = "visible";
+            Remove();
+            break;
+        case "Couple":
+            document.getElementById("Couple").style.visibility = "visible";
+            Remove();
+            break;
+        case "Individual":
+            document.getElementById("Individual").style.visibility = "visible";
+            Remove();
+            break;
+        case "PlusOne":
+            document.getElementById("PlusOne").style.visibility = "visible";
+            Remove();
+            break;
+        default:
+            alert("Try Again")
+    }
+}
 
 //Countdown
 var countDownDate = new Date("Jun 29, 2025 16:00:00" ).getTime();
