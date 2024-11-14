@@ -52,6 +52,12 @@ h1 {
     background-position: center;
 }
 
+.RSVP {
+    background-image: url("Images/BackgroundHome.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
 .image {
     height: 85vh;
 }
@@ -193,6 +199,23 @@ a {
     border-bottom-style: solid;
 }
 
+/* RSVP */
+#Family {
+    visibility: collapse;
+}
+
+#Couple {
+    visibility: collapse;
+}
+
+#Individual {
+    visibility: collapse;
+}
+
+#PlusOne {
+    visibility: collapse;
+}
+
 /* Info page */
 #FAQs {
     padding: 5px;
@@ -210,6 +233,7 @@ a {
 
 /* Form Class */
 #Form {
+    width: 100%;
     margin-left: 25px;
     margin-right: 25px;
     color: black;
@@ -266,6 +290,10 @@ footer {
 
     h4 {
         font-size: 45px;
+    }
+
+    footer {
+        font-size: 30px;
     }
 
     #section {
