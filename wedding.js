@@ -93,7 +93,7 @@ function Passcode() {
 }
 
 //Countdown
-var countDownDate = new Date("Jun 29, 2025 16:00:00" ).getTime();
+var countDownDate = new Date("Jun 29, 2025 15:00:00" ).getTime();
 
 function timeuntil() { 
 
