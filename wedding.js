@@ -64,27 +64,52 @@ window.addEventListener("DOMContentLoaded", (event) => {
 });
 
 function Remove() {
-    document.getElementById("TestCode").style.visibility = "collapse";
+    document.getElementById("TestCode").style.display = "none";
 }
+
+// function Passcode() {
+//     var Code = document.getElementById("passcode").value;
+
+//     switch(Code) {
+//         case "Family":
+//             document.getElementById("Family").style.visibility = "visible";
+//             Remove();
+//             break;
+//         case "Couple":
+//             document.getElementById("Couple").style.visibility = "visible";
+//             Remove();
+//             break;
+//         case "Individual":
+//             document.getElementById("Individual").style.visibility = "visible";
+//             Remove();
+//             break;
+//         case "PlusOne":
+//             document.getElementById("PlusOne").style.visibility = "visible";
+//             Remove();
+//             break;
+//         default:
+//             alert("Try Again")
+//     }
+// }
 
 function Passcode() {
     var Code = document.getElementById("passcode").value;
 
     switch(Code) {
         case "Family":
-            document.getElementById("Family").style.visibility = "visible";
+            document.getElementById("Family").style.display = "inline";
             Remove();
             break;
         case "Couple":
-            document.getElementById("Couple").style.visibility = "visible";
+            document.getElementById("Couple").style.display = "inline";
             Remove();
             break;
         case "Individual":
-            document.getElementById("Individual").style.visibility = "visible";
+            document.getElementById("Individual").style.display = "inline";
             Remove();
             break;
         case "PlusOne":
-            document.getElementById("PlusOne").style.visibility = "visible";
+            document.getElementById("PlusOne").style.display = "inline";
             Remove();
             break;
         default:
