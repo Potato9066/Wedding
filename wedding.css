@@ -204,19 +204,19 @@ a {
 
 /* RSVP */
 #Family {
-    visibility: collapse;
+    display: none;
 }
 
 #Couple {
-    visibility: collapse;
+    display: none;
 }
 
 #Individual {
-    visibility: collapse;
+    display: none;
 }
 
 #PlusOne {
-    visibility: collapse;
+    display: none;
 }
 
 /* Info page */
